@@ -1,0 +1,12 @@
+**/__pycache__/
+
+/data/train
+/data/validation
+/data/train.json
+/data/validation.json
+
+/demo/demo_videos
+/demo/inference_videos
+
+weights.txt
+*.pth
