@@ -18,7 +18,7 @@ def parse_args():
     parser.add_argument(
         '-r',
         '--root-folder',
-        default='data',
+        default='.',
         type=str,
         help='Root of dataset'
     )
@@ -26,14 +26,14 @@ def parse_args():
     parser.add_argument(
         '-t',
         '--train-folder',
-        default='data/train',
+        default='train',
         help='Train folder of dataset'
     )
 
     parser.add_argument(
         '-v',
         '--validation-folder',
-        default='data/validation',
+        default='validation',
         help='Validation folder of dataset'
     )
 
