@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ```
 
 ## Dataset
-If you want to learn your model, then download [DeepFashion2 dataset](https://github.com/switchablenorms/DeepFashion2).
+If you want to fit your model, then download [DeepFashion2 dataset](https://github.com/switchablenorms/DeepFashion2).
 
 
 ## Streamlit demo
