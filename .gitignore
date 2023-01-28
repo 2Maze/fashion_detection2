@@ -8,5 +8,5 @@
 /demo/demo_videos
 /demo/inference_videos
 
+/checkpoints
 weights.txt
-*.pth
