@@ -8,6 +8,7 @@ Train SSD and YOLOv3 on [DeepFashion2 dataset](https://github.com/switchablenorm
 
 ```Shell
 git clone https://github.com/2Maze/fashion_detection2.git
+cd fashion_detection2
 pip install -r requirements.txt
 ```
 
