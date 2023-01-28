@@ -4,7 +4,7 @@
 
 Train SSD and YOLOv3 on [DeepFashion2 dataset](https://github.com/switchablenorms/DeepFashion2) with [mmdetection](https://github.com/open-mmlab/mmdetection).
 
-## Instalation
+## Installation
 
 ```Shell
 git clone https://github.com/2Maze/fashion_detection2.git
