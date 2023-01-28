@@ -2,7 +2,7 @@
 ![](doc/ssd_inference.gif)
 <p align="center">Example of working SSD</p>
 
-Train SSD and YOLOv3 on DeepFashion2 with [mmdetection](https://github.com/open-mmlab/mmdetection)
+Train SSD and YOLOv3 on [DeepFashion2 dataset](https://github.com/switchablenorms/DeepFashion2) with [mmdetection](https://github.com/open-mmlab/mmdetection).
 
 ## Instalation
 
@@ -10,10 +10,6 @@ Train SSD and YOLOv3 on DeepFashion2 with [mmdetection](https://github.com/open-
 git clone https://github.com/2Maze/fashion_detection2.git
 pip install -r requirements.txt
 ```
-
-## Dataset
-If you want to fit your model, then download [DeepFashion2 dataset](https://github.com/switchablenorms/DeepFashion2).
-
 
 ## Streamlit demo
 Model will be loaded from model.py file. If you want change model, edit config path, weights path in model.py.
@@ -29,3 +25,29 @@ For inference video copy them into demo/demo_videos. All videos must .mp4 format
 ```Shell
 python inference_video.py
 ```
+
+## Instruction for fit your model
+If you want to train your model:
+1. Download [dataset](https://github.com/switchablenorms/DeepFashion2)
+2. Choose model.
+    
+    If you don't know what models are in mmdetection:
+    ```Shell
+    python download_weights.py
+    ```
+    You will see weights.txt file with all models in mmdetection.
+3. Download weights your models.
+
+    When you have chosen a model, you must download its weights using the same script with the flag -w and model's name. For example download ssd weights:
+
+    ```Shell
+    python download_weights.py -w ssd300_coco
+    ```
+    After download appear folder with name configs with your weights.
+4. Create and configure config.
+
+Next step is create and configure .py file with config of your model. All configs are in the configs folder. Examples you can see in the same folder.
+
+5. Train model
+
+At this step you need build dataset and train detector. All examples in repository. Good luck!
