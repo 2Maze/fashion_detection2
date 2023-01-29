@@ -12,6 +12,12 @@ cd fashion_detection2
 pip install -r requirements.txt
 ```
 
+## Logs
+All logs can be viewed in tensorboard by entering this command:
+```
+tensorboard --logdir .
+```
+
 ## Streamlit demo
 Model will be loaded from model.py file. If you want change model, edit config path, weights path in model.py.
 ```Shell
